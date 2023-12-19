@@ -1,6 +1,6 @@
 {
-  "name": "Master",
-  "version": "1.0.0",
+  "name": "frest",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "dev": "npm run development",
@@ -121,7 +121,6 @@
     "datatables.net-rowgroup-bs5": "1.3.1",
     "datatables.net-select-bs5": "1.6.2",
     "dropzone": "5.9.3",
-    "feather-icons": "4.29.0",
     "flag-icons": "6.7.0",
     "flatpickr": "4.6.13",
     "hammerjs": "2.0.8",

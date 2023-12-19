@@ -37,14 +37,12 @@ $customizerHidden = 'customizer-hide';
         <!-- Logo -->
         <div class="app-brand mb-4">
           <a href="{{url('/')}}" class="app-brand-link gap-2 mb-2">
-            <span class="app-brand-logo demo">@include('_partials.macros',['height'=>20,'withbg' => "fill: #fff;"])</span>
+            <span class="app-brand-logo demo">@include('_partials.macros')</span>
             <span class="app-brand-text demo h3 mb-0 fw-bold">{{ config('variables.templateName') }}</span>
           </a>
         </div>
         <!-- /Logo -->
-
-        <h4 class="mb-3">Verify your email ✉️</h4>
-
+        <h4 class="mb-2">Verify your email ✉️</h4>
         @if (session('status') == 'verification-link-sent')
         <div class="alert alert-success" role="alert">
           <div class="alert-body">
@@ -68,7 +66,7 @@ $customizerHidden = 'customizer-hide';
         </div>
       </div>
     </div>
-    <!-- /Verify Email -->
+    <!-- / Verify Email -->
   </div>
 </div>
 @endsection

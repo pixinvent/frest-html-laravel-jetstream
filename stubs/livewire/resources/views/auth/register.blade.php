@@ -8,13 +8,14 @@ $customizerHidden = 'customizer-hide';
 @section('title', 'Register Page')
 
 @section('page-style')
-{{-- Page Css files --}}
-<link rel="stylesheet" href="{{ asset(mix('assets/vendor/css/pages/page-auth.css')) }}">
+<!-- Page -->
+<link rel="stylesheet" href="{{asset('assets/vendor/css/pages/page-auth.css')}}">
 @endsection
 
 @section('content')
 <div class="authentication-wrapper authentication-cover">
   <div class="authentication-inner row m-0">
+
     <!-- /Left Text -->
     <div class="d-none d-lg-flex col-lg-7 col-xl-8 align-items-center">
       <div class="flex-row text-center mx-auto">
@@ -35,13 +36,11 @@ $customizerHidden = 'customizer-hide';
         <!-- Logo -->
         <div class="app-brand mb-4">
           <a href="{{url('/')}}" class="app-brand-link gap-2 mb-2">
-            <span class="app-brand-logo demo">@include('_partials.macros',['height'=>20,'withbg' => "fill: #fff;"])</span>
-            <span class="app-brand-text demo h3 mb-0 fw-bold">{{config('variables.templateName')}}</span>
+            <span class="app-brand-logo demo">@include('_partials.macros')</span>
+            <span class="app-brand-text demo h3 mb-0 fw-bold">{{ config('variables.templateName') }}</span>
           </a>
         </div>
         <!-- /Logo -->
-
-        <!-- Register -->
         <h4 class="mb-2">Adventure starts here 🚀</h4>
         <p class="mb-4">Make your app management easy and fun!</p>
 

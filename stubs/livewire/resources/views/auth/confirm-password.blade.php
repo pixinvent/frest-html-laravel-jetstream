@@ -8,8 +8,8 @@ $customizerHidden = 'customizer-hide';
 @section('title', 'Confirm Password')
 
 @section('page-style')
-{{-- Page Css files --}}
-<link rel="stylesheet" href="{{ asset(mix('assets/vendor/css/pages/page-auth.css')) }}">
+<!-- Page -->
+<link rel="stylesheet" href="{{asset('assets/vendor/css/pages/page-auth.css')}}">
 @endsection
 
 @section('content')
@@ -32,19 +32,19 @@ $customizerHidden = 'customizer-hide';
     <div class="d-flex col-12 col-lg-5 col-xl-4 align-items-center authentication-bg p-sm-5 p-4">
       <div class="w-px-400 mx-auto">
         <!-- Logo -->
-        <div class="app-brand justify-content-center mb-4">
+        <div class="app-brand mb-4">
           <a href="{{url('/')}}" class="app-brand-link gap-2 mb-2">
-            <span class="app-brand-logo demo">@include('_partials.macros',['height'=>20,'withbg' => "fill: #fff;"])</span>
+            <span class="app-brand-logo demo">@include('_partials.macros')</span>
             <span class="app-brand-text demo h3 mb-0 fw-bold">{{ config('variables.templateName') }}</span>
           </a>
         </div>
         <!-- /Logo -->
         <h4 class="mb-3">Confirm Password</h4>
         <p class="text-start mb-4">Please confirm your password before continuing.</p>
-        <p class="fw-medium">Type your security code here</p>
         <form id="twoStepsForm" action="{{ route('password.confirm') }}" method="POST">
           @csrf
           <div class="mb-3 form-password-toggle">
+            <label class="form-label" for="password">Enter Password</label>
             <div class="input-group input-group-merge @error('password') is-invalid @enderror">
               <input type="password" id="password" class="form-control @error('password') is-invalid @enderror" name="password" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="password" />
               <span class="input-group-text cursor-pointer">
