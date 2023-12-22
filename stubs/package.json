@@ -1,6 +1,6 @@
 {
   "name": "frest",
-  "version": "2.1.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "npm run development",
