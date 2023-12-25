@@ -3,7 +3,8 @@
 [![Latest Stable Version](https://poser.pugx.org/pixinvent/frest-html-laravel-jetstream/v)](//packagist.org/packages/pixinvent/frest-html-laravel-jetstream)
 [![License](https://poser.pugx.org/pixinvent/frest-html-laravel-jetstream/license)](//packagist.org/packages/pixinvent/frest-html-laravel-jetstream)
 
-##### Specially customized Laravel jetstream's scaffolding for [Frest html + laravel admin Template](https://1.envato.market/frest_admin). It'll not work with any other project.
+##### Specially customized Laravel jetstream's scaffolding for [Frest admin Template](#). It'll not work with any other project
+
 [Download from packagist](https://packagist.org/packages/pixinvent/frest-html-laravel-jetstream)
 
 ## Description
@@ -14,21 +15,19 @@ Frest Laravel Jetstream is a lightweight laravel package that focuses on the `VI
 
 ## Table of Content
 
-* [Installation](#installation)
-
-* [Installing Jetstream](#installing-jetstream)
-
-* [Install Jetstream With Livewire](#install-jetstream-with-livewire)
-
-* [Install Frest Laravel Bootstrap Jetstream](#install-frest-html-laravel-jetstream)
-
-* [Finalizing The Installation](#finalizing-the-installation)
-
-* [Extras](#extras)
-
-* [Pagination](#pagination)
-  
-* [License](#license)
+- [frest-html-laravel-jetstream](#frest-html-laravel-jetstream)
+        - [Specially customized Laravel jetstream's scaffolding for Frest admin Template. It'll not work with any other project.](#specially-customized-laravel-jetstreams-scaffolding-for-frest-admin-template-itll-not-work-with-any-other-project)
+  - [Description](#description)
+  - [Table of Content](#table-of-content)
+  - [Installation](#installation)
+    - [Installing Jetstream](#installing-jetstream)
+      - [Install Jetstream With Livewire](#install-jetstream-with-livewire)
+    - [Install Frest Laravel Bootstrap Jetstream](#install-frest-html-laravel-jetstream)
+    - [Finalizing The Installation](#finalizing-the-installation)
+    - [Extras](#extras)
+      - [Pagination](#pagination)
+  - [Credits](#credits)
+  - [License](#license)
 
 ## Installation
 
@@ -37,7 +36,7 @@ Frest Laravel Jetstream is a lightweight laravel package that focuses on the `VI
 You may use Composer to install Jetstream into your new Laravel project:
 
 ```
-composer require laravel/jetstream
+composer require laravel/jetstream:4.1.0
 ```
 
 If you choose to install Jetstream through Composer, you should run the jetstream:install Artisan command. This command accepts the name of the stack you prefer (livewire). You are highly encouraged to read through the entire documentation of Livewire before beginning your Jetstream project. In addition, you may use the __--teams__ switch to enable team support:
@@ -54,6 +53,12 @@ or
 // with teams support
 
 php artisan jetstream:install livewire --teams
+```
+
+#### Utilize the Jetstream-compatible version of Livewire (required)
+
+```bash
+composer require livewire/livewire:3.2.1
 ```
 
 ### Install Frest Laravel Bootstrap Jetstream
@@ -79,18 +84,20 @@ before beginning your Frest Laravel Jetstream project. In addition, you may use 
 
 php artisan jetstream_frest:swap livewire
 
+
 or
 
 // with teams support
 
 php artisan jetstream_frest:swap livewire --teams
+
 ```
 
 This will publish overrides to enable Bootstrap like the good old days!
 
 ### Finalizing The Installation
 
-After installing Frest jetstream and swapping Jetstream resources, remove tailwindCSS and its dependencies if any from your package.json and then install and build your NPM dependencies and migrate your database:
+After installing Frest Jetstream and swapping Jetstream resources, remove tailwindCSS and its dependencies if any from your package.json and then install and build your NPM dependencies and migrate your database:
 
 ```
 npm install && npm run dev
@@ -151,4 +158,4 @@ This packages is built on top of [Jetstream](https://github.com/laravel/jetstrea
 
 ## License
 
-Frest Jetstream is open-sourced software licensed under the [MIT license](https://github.com/pixinvent/frest-html-laravel-jetstream/blob/master/LICENSE).
+Frest Jetstream is open-sourced software licensed under the [MIT license](https://github.com/pixinvent/frest-html-laravel-jetstream/blob/frest/LICENSE).
